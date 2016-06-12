@@ -8,6 +8,26 @@ func() {
 	echo $var1
 }
 
+func2() {
+	echo "$1 $2"
+	if (( $1 == 1 )); then
+		echo "successful test"
+	fi
+}
+
+func2 $var3 $var2
+
+exit
+
+while read line
+do
+	echo $line
+done < info
+return
+
+
+
+
 if [[ "$var1" == "hello world" ]] 
 then
 	echo "cool, it is hello world"
