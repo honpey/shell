@@ -2,5 +2,9 @@
 var1="hello world"
 var2="nihao"
 
-echo $var1
-echo $var2
+func() {
+	echo "hello this is my first function"
+	echo $var1
+}
+
+func
