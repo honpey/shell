@@ -18,4 +18,16 @@ then
 	echo "var3 is 1"
 fi
 
-func
+if [ $var3 == 1 ]
+then
+	echo "basic numberic compare"
+else
+	echo "do not the same"
+fi
+
+if (( $var3 == 1 )) 
+then
+	echo "basic numberic compare"
+else
+	echo "do not the same"
+fi
